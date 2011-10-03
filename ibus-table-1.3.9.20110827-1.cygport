@@ -1,0 +1,7 @@
+DESCRIPTION="IBus X Input Module framework"
+HOMEPAGE="http://code.google.com/p/ibus/"
+SRC_URI="http://ibus.googlecode.com/files/${P}.tar.gz"
+
+DISTCLEANFILES="engine/table.xml.in"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/ibus"
