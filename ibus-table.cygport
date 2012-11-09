@@ -1,0 +1,17 @@
+inherit python
+
+NAME="ibus-table"
+VERSION=1.4.99.20121003
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="IBus table-based Input Module engine"
+DESCRIPTION="IBus is an Intelligent Input Bus. It is a new input framework
+for X11 systems. It provides full featured and user friendly input method
+user interface. It also may help developers to develop input method easily."
+REQUIRES="ibus"
+HOMEPAGE="http://code.google.com/p/ibus/"
+SRC_URI="http://ibus.googlecode.com/files/${P}.tar.gz"
+
+DISTCLEANFILES="engine/table.xml.in"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/ibus"
